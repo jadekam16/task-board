@@ -1,0 +1,45 @@
+{
+  "tickets": [
+    {
+      "id": "task1",
+      "title": "Task 1",
+      "description": "Description",
+      "assignedTo": "Jade",
+      "status": "To Do"
+    },
+    {
+      "id": "task2",
+      "title": "Task 2",
+      "description": "Description",
+      "assignedTo": "Jade",
+      "status": "To Do"
+    },
+    {
+      "id": "task3",
+      "title": "Task 3",
+      "description": "Description",
+      "assignedTo": "Jade",
+      "status": "In Progress"
+    },
+    {
+      "id": "a66b",
+      "title": "Finish API methods",
+      "description": "Implement PUT and DELETE functions for tasks",
+      "assignedTo": "Jade",
+      "status": "To Do"
+    }
+  ],
+  "users": [
+    {
+      "name": "Jade",
+      "email": "jadekam16@icloud.com",
+      "password": "password"
+    },
+    {
+      "id": "e744",
+      "name": "Jade",
+      "email": "jadekam16@icloud.com",
+      "password": "hello"
+    }
+  ]
+}

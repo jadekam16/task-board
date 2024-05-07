@@ -25,6 +25,12 @@ export default function Navbar() {
                 >
                     Add a Task
                 </NavLink>
+                <NavLink
+                    to='/add-user'
+                    className={linkClass}
+                >
+                    Add User
+                </NavLink>
             </div>
             
         </nav>
