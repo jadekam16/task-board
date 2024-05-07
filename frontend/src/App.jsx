@@ -28,6 +28,14 @@ function App() {
     return;
   }
 
+  // CHECK THIS
+  const deleteTask = async(id) => {
+    const res = await fetch(`http://localhost:8000/tickets?id=${id}`, {
+      method: 'DELETE'
+    })
+    return;
+  }
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<MainLayout/>}>
