@@ -29,7 +29,6 @@ function App() {
     return;
   }
 
-  // CHECK THIS
   const deleteTask = async(id) => {
     const res = await fetch(`http://localhost:8000/tickets/${id}`, {
       method: 'DELETE'
@@ -42,7 +41,7 @@ function App() {
       <Route path='/' element={<MainLayout/>}>
         <Route index element={<HomePage/>}/>
         <Route path="/tasks" element={<TaskList/>}/>
-        <Route path="/tasks/:id" element={<TaskPage/>} loader={taskLoader}/>
+        <Route path="/tasks/:id" element={<TaskPage deleteTask={deleteTask}/>} loader={taskLoader}/>
         <Route path="/add-task" element={<AddTask addTaskSubmit={addTaskSubmit}/>}/>
         <Route path="/add-user" element={<AddUser addUserSubmit={addUserSubmit}/>}/>
       </Route>

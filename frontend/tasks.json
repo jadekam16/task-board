@@ -1,13 +1,6 @@
 {
   "tickets": [
     {
-      "id": "task1",
-      "title": "Task 1",
-      "description": "Description",
-      "assignedTo": "Jade",
-      "status": "To Do"
-    },
-    {
       "id": "task2",
       "title": "Task 2",
       "description": "Description",
@@ -33,7 +26,8 @@
     {
       "name": "Jade",
       "email": "jadekam16@icloud.com",
-      "password": "password"
+      "password": "password",
+      "id": "96e3"
     },
     {
       "id": "e744",
