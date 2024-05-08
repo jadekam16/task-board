@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage"
 import TaskList from "./pages/TaskList"
 import AddTask from "./pages/AddTask"
 import AddUser from "./pages/AddUser"
+import TaskPage, {taskLoader} from "./pages/TaskPage"
 
 function App() {
   const addTaskSubmit = async(newTask) => {
@@ -30,7 +31,7 @@ function App() {
 
   // CHECK THIS
   const deleteTask = async(id) => {
-    const res = await fetch(`http://localhost:8000/tickets?id=${id}`, {
+    const res = await fetch(`http://localhost:8000/tickets/${id}`, {
       method: 'DELETE'
     })
     return;
@@ -41,6 +42,7 @@ function App() {
       <Route path='/' element={<MainLayout/>}>
         <Route index element={<HomePage/>}/>
         <Route path="/tasks" element={<TaskList/>}/>
+        <Route path="/tasks/:id" element={<TaskPage/>} loader={taskLoader}/>
         <Route path="/add-task" element={<AddTask addTaskSubmit={addTaskSubmit}/>}/>
         <Route path="/add-user" element={<AddUser addUserSubmit={addUserSubmit}/>}/>
       </Route>
